@@ -1,0 +1,62 @@
+#action-management-content {
+  .q-item {
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 3.8rem;
+    padding: .4rem .8rem .4rem 1.2rem;
+    min-height: 0;
+  }
+  .my-section {
+    .q-item__label {
+      font-size: .9rem;
+      font-weight: normal;
+    }
+    padding-left: .8rem;
+  }
+  .q-expansion-item .q-expansion-item__container {
+    > .q-item {
+      color: #335d4c;
+    }
+    .q-item__section.column.q-item__section--avatar.q-item__section--side.justify-center {
+      padding-right: 1.4rem;
+    }
+    .q-item__section--avatar {
+      min-width: 2.8rem;
+    }
+    i {
+      font-size: 1.7rem;
+    }
+  }
+  .q-expansion-item__content {
+    .q-item {
+      height: 2.6rem;
+    }
+  }
+  .my-section-selected {
+    background: linear-gradient(to right, #b0f3d2, rgba(0, 0, 0, 0)) ;
+    color: #238d4a!important;
+    padding-left: .3rem;
+  }
+  .selected {
+    width: .3rem;
+    height:1.9rem;
+    background-color: #47f3d2;
+    margin-right: .3rem;
+  }
+  .q-item__section {
+    .q-icon {
+      width: 2.1rem;
+      height: 2.1rem;
+    }
+
+  }
+  .q-item__section--main ~ .q-item__section--side {
+    padding-left: 0;
+  }
+  .q-radio__label {
+    font-size: 1.3rem;
+  }
+  .q-radio__inner {
+    font-size: 2rem;
+  }
+}

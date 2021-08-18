@@ -1,0 +1,58 @@
+#course-content {
+  .el-calendar__header {
+    padding: .6rem 1rem;
+    .el-calendar__title {
+      font-size: 1rem;
+    }
+  }
+
+  .el-calendar__body {
+    padding: .6rem 1rem 1.7rem;
+  }
+  .el-calendar-table thead th {
+    padding: .6rem 0;
+    font-size: 1rem;
+  }
+
+  .el-calendar-table .el-calendar-day {
+    height: 4rem;
+    padding: .2rem;
+  }
+
+  .el-button--mini, .el-button--mini.is-round {
+    padding: .4rem .8rem;
+    font-size: .7rem;
+  }
+
+  .el-calendar-day {
+    position: relative;
+    >span {
+      font-size: .8rem;
+      position: absolute;
+      left: 0;
+      top:.2rem;
+    }
+    .has-class {
+      position: absolute;
+      width: 26%;
+      height: 26%;
+      top:8%;
+      right:8%;
+      background-color: #d6eef6;
+      color: #258eb7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: .7rem;
+    }
+    .customer-number {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top:2rem;
+      text-align: center;
+      font-size: .7rem;
+      height: 1.5rem;
+    }
+  }
+}

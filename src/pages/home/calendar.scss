@@ -1,0 +1,194 @@
+#home-calendar {
+  .fc-theme-standard th {
+    border: .05rem solid #F3F4F7;
+  }
+
+  .fc-theme-standard td {
+    border: .05rem solid #F3F4F7;
+  }
+
+  .fc-theme-standard .fc-scrollgrid {
+    border: none;
+  }
+
+  thead {
+    .fc-scroller-harness {
+      width: 90vw;
+      margin: 0 auto;
+    }
+    td {
+      border-bottom: none!important;
+    }
+  }
+
+  tbody {
+    tr {
+      > td {
+        width: 100%;
+        height: 100%;
+        border-bottom: none !important;
+        table {
+          height: auto!important;
+          tbody {
+            tr {
+              height: 4rem;
+              padding: 0 5vw;
+              margin: 0 auto;
+              display: flex;
+              justify-content: space-between;
+              border-bottom: .05rem solid #F3F4F7;
+              td {
+                width: 15vw;
+                height: 100%;
+                border-top: none !important;
+                border-bottom: none !important;
+                border-left: none !important;
+              }
+
+              td:last-child {
+                border-right: none !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .fc-col-header {
+    width: 90vw;
+    margin: 0 auto;
+
+    tbody {
+      height: 2.2rem;
+      width: 90vw;
+      margin: 0 auto;
+
+      tr {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      th {
+        border: none;
+      }
+
+      .fc-col-header-cell {
+        border-right: none !important;
+
+        .fc-scrollgrid-sync-inner {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .fc-col-header-cell-cushion {
+            color: #D1D1D7;
+            font-size: .7rem;
+          }
+        }
+      }
+    }
+  }
+
+  .fc-scrollgrid-sync-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: .1rem;
+    .fc-daygrid-day-top {
+      width: 100%;
+      height: 100%;
+      padding: .2rem .4rem .4rem .4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h5 {
+        font-size: 1.3rem;
+        font-family: Staatliches-Regular, Staatliches;
+        font-weight: 400;
+        color: #23262D;
+      }
+      p {
+        margin: 0;
+        font-size: .6rem;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #8b8b8b;
+      }
+    }
+  }
+
+  .fc-daygrid-day-events {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+  }
+
+  .today-text {
+    width: 100%;
+    height: 1.8rem;
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-right: .2rem;
+    }
+    span {
+      font-size: .9rem;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+  }
+
+  .fc-day-today {
+    background-color: #fff;
+    .fc-daygrid-day-top {
+      background-image: linear-gradient(45deg, #20242b, #4b4f5a);
+      height: 100%;
+      border-radius: .3rem;
+      p {
+        color: #D6D5D7;
+        margin-left: .05rem;
+        margin-bottom: .05rem;
+      }
+    }
+  }
+
+  .fc-daygrid-event.fc-daygrid-block-event {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: $main_yellow;
+    border: .05rem solid #fff;
+    float: right;
+    margin-right: 0.4rem !important;
+    margin-top: .78rem;
+    color: $main_yellow;
+  }
+
+  .fc .fc-highlight {
+    border-radius: .3rem;
+    border: .15rem solid $font-black;
+    margin: .1rem;
+    background-color: transparent;
+  }
+
+  .fc-day-past {
+    .fc-daygrid-event.fc-daygrid-block-event {
+      background-color:#D1D1D7;
+    }
+  }
+
+}

@@ -1,0 +1,37 @@
+export const rightMenuData =[
+  {
+    icon:"img:images/mine/customer.png",
+    title:"我的客户",
+    to:"main/coach/customer",
+  },
+  {
+    icon:"img:images/mine/achievement.png",
+    title:"业绩进度",
+    to:"main/coach/achievement",
+    hasDivider:true,
+  },
+  {
+    icon:"img:images/mine/user.png",
+    title:"个人信息",
+    to:"main/coach/info",
+    hasDivider:false,
+  },
+  {
+    icon:"img:images/mine/password.png",
+    title:"修改密码",
+    to:"main/coach/changePassword",
+    hasDivider:true,
+  },
+  {
+    icon:"img:images/mine/settings.png",
+    title:"设置",
+    to:"main/setting",
+    hasDivider:false,
+  },
+  {
+    icon:"img:images/mine/about.png",
+    title:"关于",
+    to:"main/about",
+    hasDivider:true,
+  }
+]

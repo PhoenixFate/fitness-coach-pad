@@ -1,0 +1,33 @@
+
+.exercise-name {
+  input {
+    text-align: center;
+  }
+}
+
+.standard-item {
+  .q-field__control {
+    height: auto;
+  }
+  input {
+    text-align: center;
+    margin-right: .3rem;
+  }
+}
+
+.tabs-content {
+  .q-field__control {
+    height: auto;
+  }
+  input {
+    text-align: right;
+    margin-right: .3rem;
+  }
+  .q-field__native, .q-field__prefix, .q-field__suffix, .q-field__input {
+    line-height: 1rem;
+  }
+}
+
+.q-field__native {
+  line-height: 1.1rem;
+}

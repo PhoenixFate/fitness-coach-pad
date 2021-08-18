@@ -1,0 +1,18 @@
+.mx-input-wrapper {
+  .mx-input {
+    height: 1.7rem;
+    padding: .3rem .3rem .3rem .3rem;
+    font-size: .7rem;
+    border-radius: .2rem;
+    border: none;
+    background-color: #f6f7fa;
+    box-shadow: none;
+    text-align: right;
+  }
+  .mx-icon-calendar,.mx-icon-clear {
+    display: none!important;
+  }
+  .mx-input-wrapper:hover .mx-icon-clear {
+    display: none!important;
+  }
+}

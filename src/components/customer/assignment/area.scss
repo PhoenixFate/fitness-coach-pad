@@ -1,0 +1,44 @@
+#edit-customer-info-dialog-content {
+
+  .van-cell.van-cell--clickable.van-cell--required.van-field{
+    padding: .5rem .8rem .5rem 0;
+    input::-webkit-input-placeholder {
+      /* 修改字体颜色 */
+      color: #646464!important;
+      /* 修改字号，默认继承input */
+      font-size: .9rem!important;
+    }
+  }
+
+  .van-field__body{
+    font-size: .9rem;
+  }
+
+  .van-cell--required::before {
+    display: none;
+  }
+
+  .q-field--with-bottom {
+    padding-bottom: 0;
+  }
+
+  .q-gutter-sm {
+    margin-top: 0;
+    margin-left: -.4rem;
+  }
+
+  .q-radio {
+    margin-right: 1.6rem;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .q-radio__inner {
+    width: 2.4rem;
+    height: 2.4rem;
+    min-width: 0;
+  }
+  .q-radio__label {
+    font-size: 1rem;
+    color: #373737;
+  }
+}

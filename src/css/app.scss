@@ -1,0 +1,204 @@
+// app global css in SCSS form
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.clearfix:after {
+  content: ' ';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-block;
+  _height: 1%;
+  clear: both;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+}
+
+.pswp.pswp--supports-fs.pswp--open {
+  z-index: 4000;
+}
+
+.mx-datepicker-main {
+  z-index: 9999 !important;
+}
+
+.q-field__marginal {
+  height: 2.3rem;
+  font-size: 1.2rem;
+}
+
+.q-toolbar {
+  min-height: 0;
+  height: 3rem;
+  font-size: 1.6rem;
+  padding: 0;
+
+  .q-btn__wrapper.col.row.q-anchor--skip {
+    min-height: 2.4rem;
+    min-width: 2.4rem;
+  }
+
+  .q-btn {
+    font-size: 1rem;
+  }
+}
+
+.q-layout__section--marginal {
+  background-color: transparent;
+}
+
+.q-header.q-layout__section--marginal {
+  padding: 0 1rem;
+  height: auto;
+}
+
+.q-toolbar__title.ellipsis {
+  font-size: 1.3rem;
+}
+
+.q-drawer-container {
+  width: 40vw;
+
+  aside {
+    width: 40vw !important;
+
+    .q-list {
+      .q-item {
+        min-height: 2.4rem;
+        padding: 0.8rem 1.4rem;
+
+        .q-item__section--avatar {
+          min-width: 2.8rem;
+        }
+
+        .q-item__section--side {
+          padding-right: 1rem;
+        }
+
+        .q-item__section {
+          .q-icon {
+            width: 1.2rem;
+            height: 1.2rem;
+            font-size: 1.2rem;
+          }
+        }
+
+        .q-item__label {
+          font-size: 0.86rem;
+        }
+      }
+
+      .q-expansion-item__content {
+        a {
+          padding-left: 3.4rem !important;
+        }
+      }
+    }
+  }
+
+  .fullscreen {
+    background-color: rgba(0, 0, 0, 0) !important;
+    z-index: 200;
+  }
+}
+
+.q-field__control {
+  height: 2.8rem;
+}
+
+.q-field__native {
+  line-height: 1.4rem;
+}
+
+#login-content {
+  .q-field__control .q-field__control-container input {
+    text-align: left;
+    font-size: 1rem;
+  }
+}
+
+.default-bg-color {
+  background: #23262d;
+}
+
+span {
+  font-family: PingFangSC-Regular, PingFang SC;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: $font-black;
+}
+
+h1,
+h2,
+h3 {
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: $font-black;
+}
+
+@font-face {
+  font-family: Staatliches-Regular;
+  src: url('../font/Staatliches-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PingFangSC-Regular;
+  src: url('../font/PingFangSC-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PingFangSC-Semibold, PingFang SC;
+  src: url('../font/PingFang-SC-Semibold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.q-body--force-scrollbar.q-body--prevent-scroll {
+  top: 0 !important;
+}
+
+/*
+
+define support class for predefine color
+$common-set: #FFAD2A;
+$common-set-bg: #fff0d8;
+$super-set: #FF5764;
+$super-set-bg: #ffdde0;
+$reduce-set: #07C187;
+$reduce-set-bg: #cdf3e7;
+*/
+
+.text-common-set {
+  color: $common-set;
+}
+
+.bg-common-set {
+  background: $common-set;
+}

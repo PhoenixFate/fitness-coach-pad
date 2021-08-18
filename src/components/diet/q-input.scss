@@ -1,0 +1,16 @@
+#food-content,#diet-plan-content {
+
+  .q-field__native, .q-field__prefix, .q-field__suffix, .q-field__input {
+    padding: 0;
+    text-align: center;
+  }
+
+  .nutritional-item,.standard-item-big,.target-item {
+    .q-field__control {
+      height: auto;
+    }
+  }
+
+
+}
+

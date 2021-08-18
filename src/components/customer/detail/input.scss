@@ -1,0 +1,30 @@
+.q-field__control {
+  height: 1.8rem;
+
+  .q-field__control-container {
+    input {
+      text-align: center;
+      font-size: .8rem;
+    }
+  }
+}
+
+.mx-input-wrapper {
+  height: 2rem;
+  line-height: 2rem;
+  .mx-input {
+    height: 2rem;
+    line-height: 2rem;
+    padding: .3rem 1.6rem .3rem .5rem;
+    font-size: .7rem;
+    border-radius: .2rem;
+  }
+  .mx-icon-calendar,.mx-icon-clear {
+    font-size: .8rem;
+    right: .4rem;
+    line-height: 2rem;
+    height: 2rem;
+    position: absolute;
+    top:50%;
+  }
+}
