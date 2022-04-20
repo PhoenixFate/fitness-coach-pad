@@ -4,7 +4,7 @@
       <span class="col">
         体测数据录入
       </span>
-      <q-btn rounded flat color="common-set" icon="refresh" @click="connectingToScanDevice()">链接体脂仪</q-btn>
+      <!--<q-btn rounded flat color="common-set" icon="refresh" @click="connectingToScanDevice()">链接体脂仪</q-btn>-->
     </div>
     <BodyTestForm :customer="customer" style="margin-bottom: 1.3rem"></BodyTestForm>
     <div class="title">

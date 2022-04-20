@@ -182,7 +182,7 @@
             <div class="qr-code-image">
               <img src="images/customer/becomeVIP/QRCode.png" alt="" v-if="!qrCodeImageUrl">
               <img :src="qrCodeImageUrl" alt="" v-if="qrCodeImageUrl">
-              <div class="to-refresh" v-if="refreshFlag" @click="createQrCode(payWay)">
+              <div class="to-refresh" v-if="refreshFlag" @click="createQrCode(payWay[currentPayWay])">
                 <img src="images/customer/becomeVIP/refresh.png" alt="">
                 <p>点击刷新</p>
               </div>
@@ -482,6 +482,7 @@ export default {
       this.qrCodeImageUrl = ""
     },
     createQrCode(payWay) {
+      console.log(payWay)
       this.$emit("update:generateDialogFlag", true)
       let orderData = {
         customerId: this.customer.customerId,

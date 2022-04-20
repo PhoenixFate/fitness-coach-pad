@@ -102,7 +102,7 @@ export default {
       }
       console.log('current arrangement:', this.customerArrangement);
       let arrangementCustomer = this.customerArrangement.customer;
-      if (arrangementCustomer.customerId != scannedData.customerId) {
+      if (arrangementCustomer.customerId !== scannedData.customerId) {
         this.$q.notify({
           type: 'negative',
           message: '识别到的用户不正确'
@@ -128,7 +128,14 @@ export default {
     },
     toDetail() {
       if (this.customerArrangement.status === 0) {
-        this.scan = true;
+        // this.scan = true;
+        this.$router.push({
+          path: '/main/classAssignment/detail',
+          query: {
+            customerPlanDayId: this.customerArrangement.customerPlanDayId,
+            customerPlanId: this.customerArrangement.customerPlanId
+          }
+        });
       } else {
         this.$router.push({
           path: '/main/classAssignment/summary',
